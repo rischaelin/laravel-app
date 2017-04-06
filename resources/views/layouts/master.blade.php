@@ -12,6 +12,7 @@
             Navigation
         </div>
         <hr />
+        @include("elements.errors")
         @yield('content')
     <hr />
         @section("footer")

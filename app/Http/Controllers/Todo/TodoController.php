@@ -10,14 +10,13 @@ namespace App\Http\Controllers\Todo;
 
 
 use App\Http\Controllers\Controller;
-use App\Http\Request\Todo\TodoStoreRequest;
-use Illuminate\Http\Request;
+use App\Http\Requests\todo\TodoStoreRequest;
+use Illuminate\Foundation\Http\FormRequest;
 
 class TodoController extends Controller {
     public function index() {
         return view("todo.todo.index");
     }
-
 
 
     public function store(TodoStoreRequest $request) {
